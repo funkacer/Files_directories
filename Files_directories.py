@@ -23,6 +23,12 @@ class Element():
     def get_name(self):
         return self._name
 
+    def get_names(self):
+        return [self._name]
+
+    def get_elements(self):
+        return self
+
     def get_tree(self):
         return self._name
 
@@ -35,10 +41,18 @@ class Element():
     def get_extension(self):
         return self._extension
 
+    def get_isFile(self):
+        return self._isFile
+
+    def get_isDirectory(self):
+        return self._isDirectory
+
 class File(Element):
 
     def __init__(self, name):
         self._name = name
+        self._isFile = True
+        self._isDirectory = False
 
     def compute_stats(self):
         self._path = os.path.realpath(self._name)
@@ -52,6 +66,8 @@ class Directory(Element):
     def __init__(self, name):
         self._name = name
         self._elements = []
+        self._isFile = False
+        self._isDirectory = True
 
     def add_element(self, element):
         self._elements.append(element)
@@ -72,17 +88,24 @@ class Directory(Element):
             size += e.get_size()
         return size
 
-    def get_tree(self):
-        tree = ""
+    def get_names(self):
+        names = set()
         for e in self._elements:
-            tree += e.get_name() + "\n"
+            if e.get_isDirectory:
+                for name in e.get_names():
+                    names.add((e.get_name(), name))
             #tree += e.get_tree() + "\n"
-        return tree
+        return names
 
     def get_dict_count(self):
-        tree = ""
+        tree = {}
         for e in self._elements:
-            tree += e.get_dict_count() + "\n"
+            #print(e.get_name(), e.get_names(), e.get_isDirectory())
+            if e.get_isDirectory():
+                if tree.get(e.get_name()) is None:
+                    tree[e.get_name()] = e.get_count()
+                else:
+                    tree[e.get_name()] += e.get_count()
         return tree
 
     def get_dict_size(self):
@@ -174,9 +197,9 @@ def main():
     parent_directory.compute_stats()
     print("get_count", parent_directory.get_count())
     print("get_size", parent_directory.get_size())
-    print("get_tree", parent_directory.get_tree())
-    print("get_dict_size", parent_directory.get_dict_size())
-    #print("get_dict_count", parent_directory.get_dict_count())
+    print("get_names", parent_directory.get_names())
+    #rint("get_dict_count", parent_directory.get_dict_count())
+    #print("get_dict_size", parent_directory.get_dict_size())
 
     temp_p = []
     for e in path_dict:
