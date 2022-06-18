@@ -1,3 +1,0 @@
-C:\#Git\Files_directories	5	1.7 MB	2
-C:\#Git\Files_directories\old	1	9.2 KB	0
-C:\#Git\Files_directories\__pycache__	1	2.8 KB	0

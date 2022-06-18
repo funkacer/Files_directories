@@ -15,82 +15,6 @@ superpath_dict={}
 SUFFIXES = {1000:['KB','MB','GB','TB','PB','ZB','YB'],
             1024:['KiB','MiB','GiB','TiB','PiB','ZiB','YiB']}
 
-class Element():
-
-    def get_path(self):
-        return self._path
-
-    def get_name(self):
-        return self._name
-
-    def get_tree(self):
-        return self._name
-
-    def get_count(self):
-        return 1
-
-    def get_size(self):
-        return self._size
-
-    def get_extension(self):
-        return self._extension
-
-class File(Element):
-
-    def __init__(self, name):
-        self._name = name
-
-    def compute_stats(self):
-        self._path = os.path.realpath(self._name)
-        metadata = os.stat(self._name)
-        self._size = metadata.st_size
-        self._extention = os.path.splitext(self._name)[1]
-
-
-class Directory(Element):
-
-    def __init__(self, name):
-        self._name = name
-        self._elements = []
-
-    def add_element(self, element):
-        self._elements.append(element)
-
-    def compute_stats(self):
-        for e in self._elements:
-            e.compute_stats()
-
-    def get_count(self):
-        count = 0
-        for e in self._elements:
-            count += e.get_count()
-        return count
-
-    def get_size(self):
-        size = 0
-        for e in self._elements:
-            size += e.get_size()
-        return size
-
-    def get_tree(self):
-        tree = ""
-        for e in self._elements:
-            tree += e.get_name() + "\n"
-            #tree += e.get_tree() + "\n"
-        return tree
-
-    def get_dict_count(self):
-        tree = ""
-        for e in self._elements:
-            tree += e.get_dict_count() + "\n"
-        return tree
-
-    def get_dict_size(self):
-        tree = {}
-        for e in self._elements:
-            tree[e.get_name()] = e.get_size()
-        return tree
-
 def approximate_size(size, a_kilobite_is_1024_bytes=True):
     '''Convert
 
@@ -107,8 +31,8 @@ def approximate_size(size, a_kilobite_is_1024_bytes=True):
 
     raise ValueError('nubmer too large')
 
-def scan_all (path, previous_directory):
-    global files_all,size_all,path_list,path_dict,files_list,files_dict,extentions_list,extentions_dict,superpath_list,superpath_dict, tree
+def scan_all (path):
+    global files_all,size_all,path_list,path_dict,files_list,files_dict,extentions_list,extentions_dict,superpath_list,superpath_dict
     #dirs = [(os.path.realpath(entry.name)) for entry in os.scandir(path) if not entry.name.startswith('.') and entry.is_dir()]
     if not "D:\\$RECYCLE.BIN" in path and not "D:\\System Volume Information" in path:
         dirs = [(entry.path) for entry in os.scandir(path) if not entry.name.startswith('.') and entry.is_dir()]
@@ -141,8 +65,6 @@ def scan_all (path, previous_directory):
                 extentions_dict[extention] = [0,0]
             extentions_dict[extention][0] += 1
             extentions_dict[extention][1] += size
-            file = File(files[f])
-            previous_directory.add_element(file)
 
         #print (len (files), approximate_size(size,False)) - toto se vypisuje
         files_all += len (files)
@@ -155,28 +77,16 @@ def scan_all (path, previous_directory):
                 superpath_dict[sp][1] += size_path
                 superpath_dict[sp][2] += 1
                 '''toto napočítá i podpodadresáře!!!'''
+
         for d in range(len (dirs)):
-            directory = Directory(dirs[d])
-            previous_directory.add_element(directory)
-            #tree[level].append([])  # append branch to level
-            scan_all (dirs[d], directory)
+            scan_all (dirs[d])
 
 def main():
-    global tree
     #scan_all('F:\# Hudba')
     #scan_all("D:\\# Izotope")
     path = os.getcwd()
-    parent_directory = Directory(path)
-    print(parent_directory.get_name())
     print ('Start...')
-    scan_all(path, parent_directory)
-
-    parent_directory.compute_stats()
-    print("get_count", parent_directory.get_count())
-    print("get_size", parent_directory.get_size())
-    print("get_tree", parent_directory.get_tree())
-    print("get_dict_size", parent_directory.get_dict_size())
-    #print("get_dict_count", parent_directory.get_dict_count())
+    scan_all(path)
 
     temp_p = []
     for e in path_dict:
