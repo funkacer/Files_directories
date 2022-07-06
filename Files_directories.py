@@ -4,6 +4,8 @@ import time
 import datetime
 import sys
 
+os.system('color')
+
 SUFFIXES = {1000:['KB','MB','GB','TB','PB','ZB','YB'],
             1024:['KiB','MiB','GiB','TiB','PiB','ZiB','YiB']}
 
