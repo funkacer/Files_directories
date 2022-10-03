@@ -1,49 +1,204 @@
-Directory	Total files	Total size	Approximate size	Total subdirs	Files in folder	Dirs in folder
-C:\#Git\Files_directories	90	12642306	12.1 MiB	47	5	5
-C:\#Git\Files_directories\.git	56	51241	50.0 KiB	39	8	5
-C:\#Git\Files_directories\.git\hooks	13	23442	22.9 KiB	0	13	0
-C:\#Git\Files_directories\.git\info	1	240	0.2 KiB	0	1	0
-C:\#Git\Files_directories\.git\logs	4	2575	2.5 KiB	4	1	1
-C:\#Git\Files_directories\.git\logs\refs	3	1684	1.6 KiB	3	0	2
-C:\#Git\Files_directories\.git\logs\refs\heads	1	891	0.9 KiB	0	1	0
-C:\#Git\Files_directories\.git\logs\refs\remotes	2	793	0.8 KiB	1	0	1
-C:\#Git\Files_directories\.git\logs\refs\remotes\origin	2	793	0.8 KiB	0	2	0
-C:\#Git\Files_directories\.git\objects	27	22575	22.0 KiB	26	0	26
-C:\#Git\Files_directories\.git\objects\12	1	60	0.1 KiB	0	1	0
-C:\#Git\Files_directories\.git\objects\13	1	2352	2.3 KiB	0	1	0
-C:\#Git\Files_directories\.git\objects\1e	1	41	0.0 KiB	0	1	0
-C:\#Git\Files_directories\.git\objects\26	1	221	0.2 KiB	0	1	0
-C:\#Git\Files_directories\.git\objects\2b	1	235	0.2 KiB	0	1	0
-C:\#Git\Files_directories\.git\objects\36	1	2699	2.6 KiB	0	1	0
-C:\#Git\Files_directories\.git\objects\42	1	610	0.6 KiB	0	1	0
-C:\#Git\Files_directories\.git\objects\4f	1	163	0.2 KiB	0	1	0
-C:\#Git\Files_directories\.git\objects\52	1	166	0.2 KiB	0	1	0
-C:\#Git\Files_directories\.git\objects\55	1	192	0.2 KiB	0	1	0
-C:\#Git\Files_directories\.git\objects\5c	1	183	0.2 KiB	0	1	0
-C:\#Git\Files_directories\.git\objects\66	1	2504	2.4 KiB	0	1	0
-C:\#Git\Files_directories\.git\objects\72	1	91	0.1 KiB	0	1	0
-C:\#Git\Files_directories\.git\objects\85	1	196	0.2 KiB	0	1	0
-C:\#Git\Files_directories\.git\objects\92	2	2143	2.1 KiB	0	2	0
-C:\#Git\Files_directories\.git\objects\9b	1	1775	1.7 KiB	0	1	0
-C:\#Git\Files_directories\.git\objects\a2	1	164	0.2 KiB	0	1	0
-C:\#Git\Files_directories\.git\objects\a4	1	1836	1.8 KiB	0	1	0
-C:\#Git\Files_directories\.git\objects\b2	1	72	0.1 KiB	0	1	0
-C:\#Git\Files_directories\.git\objects\c1	1	1842	1.8 KiB	0	1	0
-C:\#Git\Files_directories\.git\objects\c2	1	2601	2.5 KiB	0	1	0
-C:\#Git\Files_directories\.git\objects\d7	1	261	0.3 KiB	0	1	0
-C:\#Git\Files_directories\.git\objects\eb	1	207	0.2 KiB	0	1	0
-C:\#Git\Files_directories\.git\objects\f9	1	163	0.2 KiB	0	1	0
-C:\#Git\Files_directories\.git\objects\info	0	0	0.0 KiB	0	0	0
-C:\#Git\Files_directories\.git\objects\pack	2	1798	1.8 KiB	0	2	0
-C:\#Git\Files_directories\.git\refs	3	112	0.1 KiB	4	0	3
-C:\#Git\Files_directories\.git\refs\heads	1	41	0.0 KiB	0	1	0
-C:\#Git\Files_directories\.git\refs\remotes	2	71	0.1 KiB	1	0	1
-C:\#Git\Files_directories\.git\refs\remotes\origin	2	71	0.1 KiB	0	2	0
-C:\#Git\Files_directories\.git\refs\tags	0	0	0.0 KiB	0	0	0
-C:\#Git\Files_directories\__pycache__	1	8810	8.6 KiB	0	1	0
-C:\#Git\Files_directories\build	18	7085483	6.8 MiB	2	0	1
-C:\#Git\Files_directories\build\Files_directories	18	7085483	6.8 MiB	1	13	1
-C:\#Git\Files_directories\build\Files_directories\localpycos	5	32209	31.5 KiB	0	5	0
-C:\#Git\Files_directories\dist	1	5430969	5.2 MiB	0	1	0
-C:\#Git\Files_directories\old	9	53816	52.6 KiB	1	5	1
-C:\#Git\Files_directories\old\old	4	22112	21.6 KiB	0	4	0
+Name	Total files	Total size	Approximate size	Modification time	Total subdirs	Files in folder	Dirs in folder
+C:\#Git\Files_directories	134	74296870	70.86 MiB	2022-09-25 08:15:49	68	8	6
+C:\#Git\Files_directories\.gitignore	None	39	0.04 KiB	2022-06-18 06:22:08	None	None	None
+C:\#Git\Files_directories\Files_directories.exe	None	5983849	5.71 MiB	2022-09-24 07:51:13	None	None	None
+C:\#Git\Files_directories\Files_directories.py	None	11740	11.46 KiB	2022-09-24 07:30:03	None	None	None
+C:\#Git\Files_directories\Files_directories.spec	None	878	0.86 KiB	2022-09-24 07:51:00	None	None	None
+C:\#Git\Files_directories\Files_directories.txtx	None	22118	21.60 KiB	2022-09-24 07:51:27	None	None	None
+C:\#Git\Files_directories\Pyinstaller.txt	None	55	0.05 KiB	2022-09-24 07:50:44	None	None	None
+C:\#Git\Files_directories\Pyth.dbx	None	30339072	28.93 MiB	2022-09-24 09:52:39	None	None	None
+C:\#Git\Files_directories\README.md	None	34	0.03 KiB	2022-06-18 05:57:36	None	None	None
+C:\#Git\Files_directories\.git	72	11439901	10.91 MiB	2022-09-20 14:02:34	53	8	5
+C:\#Git\Files_directories\.git\COMMIT_EDITMSG	None	685	0.67 KiB	2022-06-18 17:46:46	None	None	None
+C:\#Git\Files_directories\.git\config	None	304	0.30 KiB	2022-06-18 05:57:36	None	None	None
+C:\#Git\Files_directories\.git\description	None	73	0.07 KiB	2022-06-18 05:57:32	None	None	None
+C:\#Git\Files_directories\.git\FETCH_HEAD	None	97	0.09 KiB	2022-09-19 10:26:30	None	None	None
+C:\#Git\Files_directories\.git\HEAD	None	21	0.02 KiB	2022-06-18 05:57:36	None	None	None
+C:\#Git\Files_directories\.git\index	None	3460	3.38 KiB	2022-09-19 10:26:30	None	None	None
+C:\#Git\Files_directories\.git\ORIG_HEAD	None	41	0.04 KiB	2022-09-19 10:26:30	None	None	None
+C:\#Git\Files_directories\.git\packed-refs	None	112	0.11 KiB	2022-06-18 05:57:36	None	None	None
+C:\#Git\Files_directories\.git\hooks	12	20659	20.17 KiB	2022-09-20 14:02:33	0	12	0
+C:\#Git\Files_directories\.git\hooks\applypatch-msg.sample	None	478	0.47 KiB	2022-06-18 05:57:32	None	None	None
+C:\#Git\Files_directories\.git\hooks\commit-msg.sample	None	896	0.88 KiB	2022-06-18 05:57:32	None	None	None
+C:\#Git\Files_directories\.git\hooks\fsmonitor-watchman.sample	None	4655	4.55 KiB	2022-06-18 05:57:32	None	None	None
+C:\#Git\Files_directories\.git\hooks\post-update.sample	None	189	0.18 KiB	2022-06-18 05:57:32	None	None	None
+C:\#Git\Files_directories\.git\hooks\pre-applypatch.sample	None	424	0.41 KiB	2022-06-18 05:57:32	None	None	None
+C:\#Git\Files_directories\.git\hooks\pre-commit.sample	None	1643	1.60 KiB	2022-06-18 05:57:32	None	None	None
+C:\#Git\Files_directories\.git\hooks\pre-merge-commit.sample	None	416	0.41 KiB	2022-06-18 05:57:32	None	None	None
+C:\#Git\Files_directories\.git\hooks\pre-push.sample	None	1374	1.34 KiB	2022-06-18 05:57:32	None	None	None
+C:\#Git\Files_directories\.git\hooks\pre-rebase.sample	None	4898	4.78 KiB	2022-06-18 05:57:32	None	None	None
+C:\#Git\Files_directories\.git\hooks\pre-receive.sample	None	544	0.53 KiB	2022-06-18 05:57:32	None	None	None
+C:\#Git\Files_directories\.git\hooks\prepare-commit-msg.sample	None	1492	1.46 KiB	2022-06-18 05:57:32	None	None	None
+C:\#Git\Files_directories\.git\hooks\update.sample	None	3650	3.56 KiB	2022-06-18 05:57:32	None	None	None
+C:\#Git\Files_directories\.git\info	1	240	0.23 KiB	2022-09-20 14:02:33	0	1	0
+C:\#Git\Files_directories\.git\info\exclude	None	240	0.23 KiB	2022-06-18 05:57:32	None	None	None
+C:\#Git\Files_directories\.git\logs	4	1457	1.42 KiB	2022-09-20 14:02:33	4	1	1
+C:\#Git\Files_directories\.git\logs\HEAD	None	488	0.48 KiB	2022-09-19 10:26:30	None	None	None
+C:\#Git\Files_directories\.git\logs\refs	3	969	0.95 KiB	2022-09-20 14:02:33	3	0	2
+C:\#Git\Files_directories\.git\logs\refs\heads	1	488	0.48 KiB	2022-09-20 14:02:33	0	1	0
+C:\#Git\Files_directories\.git\logs\refs\heads\main	None	488	0.48 KiB	2022-09-19 10:26:30	None	None	None
+C:\#Git\Files_directories\.git\logs\refs\remotes	2	481	0.47 KiB	2022-09-20 14:02:33	1	0	1
+C:\#Git\Files_directories\.git\logs\refs\remotes\origin	2	481	0.47 KiB	2022-09-20 14:02:33	0	2	0
+C:\#Git\Files_directories\.git\logs\refs\remotes\origin\HEAD	None	185	0.18 KiB	2022-06-18 05:57:36	None	None	None
+C:\#Git\Files_directories\.git\logs\refs\remotes\origin\main	None	296	0.29 KiB	2022-09-19 10:26:30	None	None	None
+C:\#Git\Files_directories\.git\objects	44	11412640	10.88 MiB	2022-09-20 14:02:34	40	0	40
+C:\#Git\Files_directories\.git\objects\00	1	629	0.61 KiB	2022-09-20 14:02:33	0	1	0
+C:\#Git\Files_directories\.git\objects\00\2e2b885c0a2c59e38830233c142a7fc73ad51b	None	629	0.61 KiB	2022-09-19 10:26:30	None	None	None
+C:\#Git\Files_directories\.git\objects\03	1	27743	27.09 KiB	2022-09-20 14:02:33	0	1	0
+C:\#Git\Files_directories\.git\objects\03\f0a2aedb556494aeca2e3c8225702695641f2b	None	27743	27.09 KiB	2022-09-19 10:26:30	None	None	None
+C:\#Git\Files_directories\.git\objects\06	1	201	0.20 KiB	2022-09-20 14:02:33	0	1	0
+C:\#Git\Files_directories\.git\objects\06\175263592266b02c977aede3e878475dc255db	None	201	0.20 KiB	2022-09-19 10:26:30	None	None	None
+C:\#Git\Files_directories\.git\objects\13	1	2352	2.30 KiB	2022-09-20 14:02:33	0	1	0
+C:\#Git\Files_directories\.git\objects\13\67d83242b9ce7489606ca174e2a3875de017ab	None	2352	2.30 KiB	2022-09-19 10:26:28	None	None	None
+C:\#Git\Files_directories\.git\objects\1c	1	5273734	5.03 MiB	2022-09-20 14:02:33	0	1	0
+C:\#Git\Files_directories\.git\objects\1c\eeefba72e1e502ab7a9fa48ba68a3320051c98	None	5273734	5.03 MiB	2022-09-19 10:26:30	None	None	None
+C:\#Git\Files_directories\.git\objects\1d	1	66	0.06 KiB	2022-09-20 14:02:33	0	1	0
+C:\#Git\Files_directories\.git\objects\1d\b9b85fafa88519b939c104025ee6c08f2e5f64	None	66	0.06 KiB	2022-09-19 10:26:30	None	None	None
+C:\#Git\Files_directories\.git\objects\1e	1	41	0.04 KiB	2022-09-20 14:02:33	0	1	0
+C:\#Git\Files_directories\.git\objects\1e\5279b7cfd2ce68ceafc4d400cc9b80e8dbc552	None	41	0.04 KiB	2022-06-18 17:46:08	None	None	None
+C:\#Git\Files_directories\.git\objects\20	1	436	0.43 KiB	2022-09-20 14:02:33	0	1	0
+C:\#Git\Files_directories\.git\objects\20\cbe86c080a70a92c7cc6759f040eb3f9447041	None	436	0.43 KiB	2022-09-19 10:26:28	None	None	None
+C:\#Git\Files_directories\.git\objects\26	1	221	0.22 KiB	2022-09-20 14:02:33	0	1	0
+C:\#Git\Files_directories\.git\objects\26\e1cc5544aee69f47baa12a0634f7a521cb4b10	None	221	0.22 KiB	2022-09-19 10:26:30	None	None	None
+C:\#Git\Files_directories\.git\objects\28	1	1011	0.99 KiB	2022-09-20 14:02:33	0	1	0
+C:\#Git\Files_directories\.git\objects\28\b0e6b266f1722ddc8fb4214977925b1c097753	None	1011	0.99 KiB	2022-09-19 10:26:30	None	None	None
+C:\#Git\Files_directories\.git\objects\36	1	2699	2.64 KiB	2022-09-20 14:02:33	0	1	0
+C:\#Git\Files_directories\.git\objects\36\b329f87b7dc3190d0ef6c48bda9f9352208868	None	2699	2.64 KiB	2022-09-19 10:26:30	None	None	None
+C:\#Git\Files_directories\.git\objects\3c	1	204	0.20 KiB	2022-09-20 14:02:33	0	1	0
+C:\#Git\Files_directories\.git\objects\3c\44794853cca11c329329f806fd63fc7c5fd654	None	204	0.20 KiB	2022-09-19 10:26:30	None	None	None
+C:\#Git\Files_directories\.git\objects\42	1	610	0.60 KiB	2022-09-20 14:02:33	0	1	0
+C:\#Git\Files_directories\.git\objects\42\8c06cc24a2db9a19df27f8f5cce0974563a69f	None	610	0.60 KiB	2022-09-19 10:26:28	None	None	None
+C:\#Git\Files_directories\.git\objects\49	1	709	0.69 KiB	2022-09-20 14:02:33	0	1	0
+C:\#Git\Files_directories\.git\objects\49\44d5b77a4a4e4ccaa0234ca1b388ce0d33dbef	None	709	0.69 KiB	2022-09-19 10:26:28	None	None	None
+C:\#Git\Files_directories\.git\objects\4f	2	4586	4.48 KiB	2022-09-20 14:02:33	0	2	0
+C:\#Git\Files_directories\.git\objects\4f\254789565ccbe7f3dc684c24b5cf1528808ba2	None	163	0.16 KiB	2022-09-19 10:26:30	None	None	None
+C:\#Git\Files_directories\.git\objects\4f\8f22291c0f4b0dec2c82785d1b6117e2073102	None	4423	4.32 KiB	2022-09-19 10:26:30	None	None	None
+C:\#Git\Files_directories\.git\objects\52	1	166	0.16 KiB	2022-09-20 14:02:33	0	1	0
+C:\#Git\Files_directories\.git\objects\52\e4ebc74588a1ca6e8eb43f9f3abbe6266b1b77	None	166	0.16 KiB	2022-06-18 17:46:16	None	None	None
+C:\#Git\Files_directories\.git\objects\55	1	192	0.19 KiB	2022-09-20 14:02:34	0	1	0
+C:\#Git\Files_directories\.git\objects\55\5743c0bfeefa956e75afc7d62e685aa3c18cbb	None	192	0.19 KiB	2022-09-19 10:26:30	None	None	None
+C:\#Git\Files_directories\.git\objects\5c	1	183	0.18 KiB	2022-09-20 14:02:34	0	1	0
+C:\#Git\Files_directories\.git\objects\5c\6bb824b3c96350b45eeb509d52e4628a6b05c8	None	183	0.18 KiB	2022-09-19 10:26:28	None	None	None
+C:\#Git\Files_directories\.git\objects\5d	1	1300	1.27 KiB	2022-09-20 14:02:34	0	1	0
+C:\#Git\Files_directories\.git\objects\5d\69288ee973f890d05c70453e7fae1012c0d2df	None	1300	1.27 KiB	2022-09-19 10:26:28	None	None	None
+C:\#Git\Files_directories\.git\objects\61	1	259	0.25 KiB	2022-09-20 14:02:34	0	1	0
+C:\#Git\Files_directories\.git\objects\61\bd650292f608dfc1c3b32c668e863f664e80f6	None	259	0.25 KiB	2022-09-19 10:26:30	None	None	None
+C:\#Git\Files_directories\.git\objects\65	1	8198	8.01 KiB	2022-09-20 14:02:34	0	1	0
+C:\#Git\Files_directories\.git\objects\65\e5ccab3b28363fe6527cc98b764c27f3b98689	None	8198	8.01 KiB	2022-09-19 10:26:30	None	None	None
+C:\#Git\Files_directories\.git\objects\66	1	2504	2.45 KiB	2022-09-20 14:02:34	0	1	0
+C:\#Git\Files_directories\.git\objects\66\df2fde668e21e74dd533f3c31ba4a2652d5f65	None	2504	2.45 KiB	2022-06-18 17:46:08	None	None	None
+C:\#Git\Files_directories\.git\objects\68	1	666	0.65 KiB	2022-09-20 14:02:34	0	1	0
+C:\#Git\Files_directories\.git\objects\68\87abc6ce237fceb4e196424b63285e513f9c21	None	666	0.65 KiB	2022-09-19 10:26:28	None	None	None
+C:\#Git\Files_directories\.git\objects\7b	1	173	0.17 KiB	2022-09-20 14:02:34	0	1	0
+C:\#Git\Files_directories\.git\objects\7b\7b175b1ef4a71e0a0af38bee85b1b953b30ad6	None	173	0.17 KiB	2022-09-19 10:26:28	None	None	None
+C:\#Git\Files_directories\.git\objects\80	1	1095	1.07 KiB	2022-09-20 14:02:34	0	1	0
+C:\#Git\Files_directories\.git\objects\80\7be3bffddecca84b1adca2fef8306f6bdedf11	None	1095	1.07 KiB	2022-09-19 10:26:30	None	None	None
+C:\#Git\Files_directories\.git\objects\85	2	1782	1.74 KiB	2022-09-20 14:02:34	0	2	0
+C:\#Git\Files_directories\.git\objects\85\4acaa0d45f6352d9e76d877db1def5729925f7	None	196	0.19 KiB	2022-06-18 17:46:16	None	None	None
+C:\#Git\Files_directories\.git\objects\85\839994d2fdb95a6483eefb58269ae8de4f01ae	None	1586	1.55 KiB	2022-09-19 10:26:30	None	None	None
+C:\#Git\Files_directories\.git\objects\87	1	257405	251.37 KiB	2022-09-20 14:02:34	0	1	0
+C:\#Git\Files_directories\.git\objects\87\004c6da2f97812168ab616016c8b6ae603614d	None	257405	251.37 KiB	2022-09-19 10:26:30	None	None	None
+C:\#Git\Files_directories\.git\objects\88	1	719756	702.89 KiB	2022-09-20 14:02:34	0	1	0
+C:\#Git\Files_directories\.git\objects\88\ea2015a797f3e643e118944a868de2c71de135	None	719756	702.89 KiB	2022-09-19 10:26:30	None	None	None
+C:\#Git\Files_directories\.git\objects\92	2	2143	2.09 KiB	2022-09-20 14:02:34	0	2	0
+C:\#Git\Files_directories\.git\objects\92\1806ada84c9a20daf3cbb5d5c34728a7187e87	None	199	0.19 KiB	2022-09-19 10:26:28	None	None	None
+C:\#Git\Files_directories\.git\objects\92\dfbcc52a184693f76eac7cf7a2f0d67c8f4805	None	1944	1.90 KiB	2022-06-18 17:46:08	None	None	None
+C:\#Git\Files_directories\.git\objects\a2	2	1802	1.76 KiB	2022-09-20 14:02:34	0	2	0
+C:\#Git\Files_directories\.git\objects\a2\61a670da24b30106755eec078d2540eade2250	None	1638	1.60 KiB	2022-09-19 10:26:28	None	None	None
+C:\#Git\Files_directories\.git\objects\a2\bc46426d598cdc2cf523621b99c8b0c53d15d4	None	164	0.16 KiB	2022-06-18 17:46:48	None	None	None
+C:\#Git\Files_directories\.git\objects\ab	1	59	0.06 KiB	2022-09-20 14:02:34	0	1	0
+C:\#Git\Files_directories\.git\objects\ab\e8f391fb15d92fb115bb76d973893e5a1d0556	None	59	0.06 KiB	2022-09-19 10:26:28	None	None	None
+C:\#Git\Files_directories\.git\objects\c0	1	2365	2.31 KiB	2022-09-20 14:02:34	0	1	0
+C:\#Git\Files_directories\.git\objects\c0\042e1ba0ebddf9864757fdfdd27adc1468831d	None	2365	2.31 KiB	2022-09-19 10:26:28	None	None	None
+C:\#Git\Files_directories\.git\objects\cb	1	1134	1.11 KiB	2022-09-20 14:02:34	0	1	0
+C:\#Git\Files_directories\.git\objects\cb\8de1cbbe60bfd2e870de862e86f8efb6c809ae	None	1134	1.11 KiB	2022-09-19 10:26:30	None	None	None
+C:\#Git\Files_directories\.git\objects\dd	1	5078255	4.84 MiB	2022-09-20 14:02:34	0	1	0
+C:\#Git\Files_directories\.git\objects\dd\9dbaefac616bb5e4b288a9ccd96d5b373d4e93	None	5078255	4.84 MiB	2022-09-19 10:26:30	None	None	None
+C:\#Git\Files_directories\.git\objects\de	1	9301	9.08 KiB	2022-09-20 14:02:34	0	1	0
+C:\#Git\Files_directories\.git\objects\de\e381a2e6d511350106c3e662d28d291bb035b5	None	9301	9.08 KiB	2022-09-19 10:26:30	None	None	None
+C:\#Git\Files_directories\.git\objects\e4	1	276	0.27 KiB	2022-09-20 14:02:34	0	1	0
+C:\#Git\Files_directories\.git\objects\e4\e1b5ddf2566bfee800b976e5ecebe8bd2c650b	None	276	0.27 KiB	2022-09-19 10:26:28	None	None	None
+C:\#Git\Files_directories\.git\objects\ea	1	448	0.44 KiB	2022-09-20 14:02:34	0	1	0
+C:\#Git\Files_directories\.git\objects\ea\c7c16ce7ca40d83b0ce26f6f0b72460e2dc43a	None	448	0.44 KiB	2022-09-19 10:26:28	None	None	None
+C:\#Git\Files_directories\.git\objects\f9	1	163	0.16 KiB	2022-09-20 14:02:34	0	1	0
+C:\#Git\Files_directories\.git\objects\f9\2908fa93661ca405dd64445b9bd7a67913c2df	None	163	0.16 KiB	2022-06-18 17:46:16	None	None	None
+C:\#Git\Files_directories\.git\objects\info	0	0	0.00 KiB	2022-06-18 05:57:32	0	0	0
+C:\#Git\Files_directories\.git\objects\pack	2	7773	7.59 KiB	2022-09-20 14:02:34	0	2	0
+C:\#Git\Files_directories\.git\objects\pack\pack-0959e92e6bda87c2681bf6f254b3bfb0b5f11244.idx	None	1436	1.40 KiB	2022-06-18 05:57:36	None	None	None
+C:\#Git\Files_directories\.git\objects\pack\pack-0959e92e6bda87c2681bf6f254b3bfb0b5f11244.pack	None	6337	6.19 KiB	2022-06-18 17:46:08	None	None	None
+C:\#Git\Files_directories\.git\refs	3	112	0.11 KiB	2022-09-20 14:02:34	4	0	3
+C:\#Git\Files_directories\.git\refs\heads	1	41	0.04 KiB	2022-09-20 14:02:34	0	1	0
+C:\#Git\Files_directories\.git\refs\heads\main	None	41	0.04 KiB	2022-09-19 10:26:30	None	None	None
+C:\#Git\Files_directories\.git\refs\remotes	2	71	0.07 KiB	2022-09-20 14:02:34	1	0	1
+C:\#Git\Files_directories\.git\refs\remotes\origin	2	71	0.07 KiB	2022-09-20 14:02:34	0	2	0
+C:\#Git\Files_directories\.git\refs\remotes\origin\HEAD	None	30	0.03 KiB	2022-06-18 05:57:36	None	None	None
+C:\#Git\Files_directories\.git\refs\remotes\origin\main	None	41	0.04 KiB	2022-09-19 10:26:30	None	None	None
+C:\#Git\Files_directories\.git\refs\tags	0	0	0.00 KiB	2022-06-18 05:57:32	0	0	0
+C:\#Git\Files_directories\a	3	11137	10.88 KiB	2022-09-23 18:24:28	1	2	1
+C:\#Git\Files_directories\a\a.txtx	None	203	0.20 KiB	2022-09-23 21:05:02	None	None	None
+C:\#Git\Files_directories\a\Files_directories.py	None	10934	10.68 KiB	2022-09-23 18:44:52	None	None	None
+C:\#Git\Files_directories\a\a	1	0	0.00 KiB	2022-09-23 18:27:19	0	1	0
+C:\#Git\Files_directories\a\a\Nový textový dokument.txt	None	0	0.00 KiB	2022-09-23 18:27:19	None	None	None
+C:\#Git\Files_directories\build	14	7897153	7.53 MiB	2022-09-24 07:51:00	2	0	1
+C:\#Git\Files_directories\build\Files_directories	14	7897153	7.53 MiB	2022-09-24 07:51:13	1	10	1
+C:\#Git\Files_directories\build\Files_directories\Analysis-00.toc	None	11440	11.17 KiB	2022-09-24 07:51:09	None	None	None
+C:\#Git\Files_directories\build\Files_directories\base_library.zip	None	1065676	1.02 MiB	2022-09-24 07:51:08	None	None	None
+C:\#Git\Files_directories\build\Files_directories\EXE-00.toc	None	4290	4.19 KiB	2022-09-24 07:51:13	None	None	None
+C:\#Git\Files_directories\build\Files_directories\Files_directories.exe.manifest	None	1430	1.40 KiB	2022-09-24 07:51:10	None	None	None
+C:\#Git\Files_directories\build\Files_directories\Files_directories.pkg	None	5664361	5.40 MiB	2022-09-24 07:51:12	None	None	None
+C:\#Git\Files_directories\build\Files_directories\PKG-00.toc	None	2758	2.69 KiB	2022-09-24 07:51:12	None	None	None
+C:\#Git\Files_directories\build\Files_directories\PYZ-00.pyz	None	857905	837.80 KiB	2022-09-24 07:51:10	None	None	None
+C:\#Git\Files_directories\build\Files_directories\PYZ-00.toc	None	8915	8.71 KiB	2022-09-24 07:51:10	None	None	None
+C:\#Git\Files_directories\build\Files_directories\warn-Files_directories.txt	None	2036	1.99 KiB	2022-09-24 07:51:09	None	None	None
+C:\#Git\Files_directories\build\Files_directories\xref-Files_directories.html	None	248334	242.51 KiB	2022-09-24 07:51:09	None	None	None
+C:\#Git\Files_directories\build\Files_directories\localpycs	4	30008	29.30 KiB	2022-09-24 07:51:09	0	4	0
+C:\#Git\Files_directories\build\Files_directories\localpycs\pyimod01_archive.pyc	None	9074	8.86 KiB	2022-09-24 07:51:09	None	None	None
+C:\#Git\Files_directories\build\Files_directories\localpycs\pyimod02_importers.pyc	None	17542	17.13 KiB	2022-09-24 07:51:09	None	None	None
+C:\#Git\Files_directories\build\Files_directories\localpycs\pyimod03_ctypes.pyc	None	3105	3.03 KiB	2022-09-24 07:51:09	None	None	None
+C:\#Git\Files_directories\build\Files_directories\localpycs\struct.pyc	None	287	0.28 KiB	2022-09-24 07:51:09	None	None	None
+C:\#Git\Files_directories\dist	1	5983849	5.71 MiB	2022-09-24 07:51:13	0	1	0
+C:\#Git\Files_directories\dist\Files_directories.exe	None	5983849	5.71 MiB	2022-09-24 07:51:13	None	None	None
+C:\#Git\Files_directories\old	32	12580781	12.00 MiB	2022-09-24 07:43:47	6	9	4
+C:\#Git\Files_directories\old\Directories.py	None	6041	5.90 KiB	2022-06-18 05:57:36	None	None	None
+C:\#Git\Files_directories\old\Files_directories.py	None	6449	6.30 KiB	2022-06-18 06:39:30	None	None	None
+C:\#Git\Files_directories\old\Files_directories.spec	None	878	0.86 KiB	2022-09-19 10:26:30	None	None	None
+C:\#Git\Files_directories\old\Files_directories01.py	None	9592	9.37 KiB	2022-09-19 10:26:30	None	None	None
+C:\#Git\Files_directories\old\Files_directories02.py	None	8162	7.97 KiB	2022-09-19 10:26:30	None	None	None
+C:\#Git\Files_directories\old\Moje_hudba01.py	None	9203	8.99 KiB	2022-06-18 05:57:36	None	None	None
+C:\#Git\Files_directories\old\old.txt	None	144	0.14 KiB	2022-06-18 16:17:52	None	None	None
+C:\#Git\Files_directories\old\old.txtx	None	273	0.27 KiB	2022-09-23 21:33:45	None	None	None
+C:\#Git\Files_directories\old\Progress_bar.py	None	419	0.41 KiB	2022-06-18 05:57:36	None	None	None
+C:\#Git\Files_directories\old\build	17	7083436	6.76 MiB	2022-09-20 14:02:34	2	0	1
+C:\#Git\Files_directories\old\build\Files_directories	17	7083436	6.76 MiB	2022-09-20 14:02:35	1	12	1
+C:\#Git\Files_directories\old\build\Files_directories\Analysis-00.toc	None	9582	9.36 KiB	2022-09-19 10:26:30	None	None	None
+C:\#Git\Files_directories\old\build\Files_directories\base_library.zip	None	799383	780.65 KiB	2022-09-19 10:26:30	None	None	None
+C:\#Git\Files_directories\old\build\Files_directories\EXE-00.toc	None	4083	3.99 KiB	2022-09-19 10:26:30	None	None	None
+C:\#Git\Files_directories\old\build\Files_directories\Files_directories.exe.manifest	None	1430	1.40 KiB	2022-09-19 10:26:30	None	None	None
+C:\#Git\Files_directories\old\build\Files_directories\Files_directories.pkg	None	5111993	4.88 MiB	2022-09-19 10:26:30	None	None	None
+C:\#Git\Files_directories\old\build\Files_directories\PKG-00.toc	None	2553	2.49 KiB	2022-09-19 10:26:30	None	None	None
+C:\#Git\Files_directories\old\build\Files_directories\PYZ-00.pyz	None	720577	703.69 KiB	2022-09-19 10:26:30	None	None	None
+C:\#Git\Files_directories\old\build\Files_directories\PYZ-00.toc	None	7412	7.24 KiB	2022-09-19 10:26:30	None	None	None
+C:\#Git\Files_directories\old\build\Files_directories\Tree-00.toc	None	98178	95.88 KiB	2022-09-19 10:26:30	None	None	None
+C:\#Git\Files_directories\old\build\Files_directories\Tree-01.toc	None	8949	8.74 KiB	2022-09-19 10:26:30	None	None	None
+C:\#Git\Files_directories\old\build\Files_directories\Tree-02.toc	None	754	0.74 KiB	2022-09-19 10:26:30	None	None	None
+C:\#Git\Files_directories\old\build\Files_directories\xref-Files_directories.html	None	286333	279.62 KiB	2022-09-19 10:26:30	None	None	None
+C:\#Git\Files_directories\old\build\Files_directories\localpycos	5	32209	31.45 KiB	2022-09-20 14:02:35	0	5	0
+C:\#Git\Files_directories\old\build\Files_directories\localpycos\pyimod01_os_path.pyc	None	1772	1.73 KiB	2022-09-19 10:26:30	None	None	None
+C:\#Git\Files_directories\old\build\Files_directories\localpycos\pyimod02_archive.pyc	None	8854	8.65 KiB	2022-09-19 10:26:30	None	None	None
+C:\#Git\Files_directories\old\build\Files_directories\localpycos\pyimod03_importers.pyc	None	17721	17.31 KiB	2022-09-19 10:26:30	None	None	None
+C:\#Git\Files_directories\old\build\Files_directories\localpycos\pyimod04_ctypes.pyc	None	3547	3.46 KiB	2022-09-19 10:26:30	None	None	None
+C:\#Git\Files_directories\old\build\Files_directories\localpycos\struct.pyo	None	315	0.31 KiB	2022-09-19 10:26:30	None	None	None
+C:\#Git\Files_directories\old\dist	1	5430969	5.18 MiB	2022-09-22 17:17:09	0	1	0
+C:\#Git\Files_directories\old\dist\Files_directories.exe	None	5430969	5.18 MiB	2022-09-19 10:26:30	None	None	None
+C:\#Git\Files_directories\old\old	4	22112	21.59 KiB	2022-09-20 14:02:36	0	4	0
+C:\#Git\Files_directories\old\old\Directories.py	None	6041	5.90 KiB	2022-06-18 05:57:36	None	None	None
+C:\#Git\Files_directories\old\old\Files_directories.py	None	6449	6.30 KiB	2022-06-18 06:39:30	None	None	None
+C:\#Git\Files_directories\old\old\Moje_hudba01.py	None	9203	8.99 KiB	2022-06-18 05:57:36	None	None	None
+C:\#Git\Files_directories\old\old\Progress_bar.py	None	419	0.41 KiB	2022-06-18 05:57:36	None	None	None
+C:\#Git\Files_directories\old\__pycache__	1	3103	3.03 KiB	2022-09-20 14:02:36	0	1	0
+C:\#Git\Files_directories\old\__pycache__\Files_directories.cpython-38.pyc	None	3103	3.03 KiB	2022-06-18 16:17:52	None	None	None
+C:\#Git\Files_directories\__pycache__	4	26264	25.65 KiB	2022-09-24 07:30:07	0	4	0
+C:\#Git\Files_directories\__pycache__\Files_directories.cpython-310.pyc	None	10940	10.68 KiB	2022-09-24 07:30:07	None	None	None
+C:\#Git\Files_directories\__pycache__\Files_directories.cpython-38.pyc	None	6262	6.12 KiB	2022-06-18 16:51:00	None	None	None
+C:\#Git\Files_directories\__pycache__\Files_directories02.cpython-310.pyc	None	8686	8.48 KiB	2022-09-23 21:34:14	None	None	None
+C:\#Git\Files_directories\__pycache__\Progress_bar.cpython-38.pyc	None	376	0.37 KiB	2022-06-18 06:23:36	None	None	None

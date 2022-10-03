@@ -6,10 +6,56 @@ import sys
 
 os.system('color')
 
+def rd(number: float, precision: int = 0) -> str:
+    '''
+    Returns rounded string with defined precicion.
+
+    INPUT:
+    number: float, to be rounded
+    precision: int, precision used when rounding
+
+    OUTPUT:
+    round_str: str
+    '''
+    num, prec = None, None
+
+    if isinstance(number, float):
+        num = number
+    else:
+        try:
+            num = float(number)
+        except Exception as e:
+            #traceback.print_exc()
+            pass
+
+    if isinstance(precision, int):
+        if precision >= 0:
+            prec = precision
+        else:
+            prec = abs(precision)
+    else:
+        try:
+            prec = abs(int(precision))
+        except Exception as e:
+            #traceback.print_exc()
+            pass
+
+    assert num is not None, 'Please specify valid number'
+    assert prec is not None, 'Please specify valid precision'
+
+    fin = 1
+    if num < 0: fin = -1
+    num1 = num*10**prec
+    if abs(num1 - int(num1)) >= .5:
+        num1 += fin
+    round_float = int(num1)/10**prec
+    round_str = '{num:.{prec}f}'.format(num=round_float,prec=prec)
+    return round_str
+
 SUFFIXES = {1000:['KB','MB','GB','TB','PB','ZB','YB'],
             1024:['KiB','MiB','GiB','TiB','PiB','ZiB','YiB']}
 
-def approximate_size(size, a_kilobite_is_1024_bytes=True):
+def approximate_size(size, a_kilobite_is_1024_bytes=True, decimals = 2):
     '''Convert
 
     Returns: string
@@ -21,9 +67,11 @@ def approximate_size(size, a_kilobite_is_1024_bytes=True):
     for suffix in SUFFIXES[multiple]:
         size /= multiple
         if size < multiple:
-            return '{0:.1f} {1}'.format(size, suffix)
+            #return '{0:.1f} {1}'.format(size, suffix)
+            size_str = rd(size, decimals)
+            return '{0} {1}'.format(size_str, suffix)
 
-    raise ValueError('nubmer too large')
+    raise ValueError('number too large')
 
 
 def di(obj_id):
@@ -43,14 +91,14 @@ class Element():
     def get_path(self):
         return self._path
 
+    def get_all_elements(self):
+        return seld._all_elements
+
     def get_elements(self):
         return self._elements
 
     def get_name(self):
         return self._name
-
-    def get_count(self):
-        return self._count
 
     def get_size(self):
         return self._size
@@ -58,8 +106,23 @@ class Element():
     def get_extension(self):
         return self._extension
 
+    def get_access_time(self):
+        return self._access_time
+
+    def get_modification_time(self):
+        return self._modification_time
+
+    def get_creation_time(self):
+        return self._creation_time
+
+    def get_all_subdirs(self):
+        return self._all_subdirs
+
     def get_subdirs(self):
         return self._subdirs
+
+    def get_all_files(self):
+        return self._all_files
 
     def get_files(self):
         return self._files
@@ -69,13 +132,20 @@ class File(Element):
 
     def __init__(self, name):
         self._name = name
-        self._count = 1 # file is 1
         self._elements = [] #file has no elements
+        self._all_subdirs = None  #file has no subdirs
+        self._subdirs = None  #file has no subdirs
+        self._all_files = None  #file has no files
+        self._files = None  #file has no files
+
 
     def compute_stats(self, max = 0, i = 0):
         self._path = os.path.realpath(self._name)
         metadata = os.stat(self._name)
         self._size = metadata.st_size
+        self._access_time = metadata.st_atime
+        self._modification_time = metadata.st_mtime
+        self._creation_time = metadata.st_ctime
         self._extention = os.path.splitext(self._name)[1]
         return max, i
 
@@ -83,7 +153,8 @@ class File(Element):
         if isinstance(self, Directory):
             print("DIR", self.get_name(), id(self), di(id(self)))
         else:
-            print("FILE", self.get_name(), id(self), di(id(self)))
+            print("FILE", self.get_name(), id(self), di(id(self)), datetime.datetime.fromtimestamp(self.get_access_time()).strftime('%Y-%m-%d %H:%M:%S'), \
+            datetime.datetime.fromtimestamp(self.get_modification_time()).strftime('%Y-%m-%d %H:%M:%S'), datetime.datetime.fromtimestamp(self.get_creation_time()).strftime('%Y-%m-%d %H:%M:%S'))
 
     def get_all_elements(self):
         return [self]
@@ -93,12 +164,21 @@ class Directory(Element):
 
     def __init__(self, name):
         self._name = name
-        self._count = None  #must be computet
-        self._size = None  #must be computet
-        self._all_subdirs = None
-        self._subdirs = None
-        self._files = None
-        self._elements = []
+        self._size = None  # must be computed
+        self._access_time = None  # must be computed
+        self._modification_time = None  # must be computed
+        self._creation_time = None  # must be computed
+        self._extention = None  # directory has no extension
+        self._all_subdirs = None  # must be computed
+        self._subdirs = None  # must be computed
+        self._all_files = None  # must be computed
+        self._files = None  # must be computed
+        self._elements = []  # must be added
+        metadata = os.stat(self._name)
+        # would size work?
+        self._access_time = metadata.st_atime
+        self._modification_time = metadata.st_mtime
+        self._creation_time = metadata.st_ctime
 
     def toolbar(self, max, i):
         if i % int(max/100+1) == 0:
@@ -147,21 +227,14 @@ class Directory(Element):
         return e
 
     def compute_stats(self, max = 0, i = 0):
-        if i == 0: max = self.get_count()
+        ''' '''
+        if i == 0: max = self.get_all_files()
         for e in self.get_elements():
             max, i = e.compute_stats(max, i)
             if isinstance(e, File):
-                i += e.get_count()
+                i += 1
                 self.toolbar(max, i)
         return max, i
-
-    def get_count(self):
-        if self._count is None:
-            count = 0
-            for e in self._elements:
-                count += e.get_count()
-            self._count = count
-        return self._count
 
     def get_size(self):
         if self._size is None:
@@ -172,6 +245,7 @@ class Directory(Element):
         return self._size
 
     def get_all_subdirs(self):
+        '''Count of all subfolders in folder - what show Windows as ...'''
         if self._all_subdirs is None:
             count = 0
             for el in self._elements:
@@ -181,14 +255,26 @@ class Directory(Element):
         return self._all_subdirs
 
     def get_subdirs(self):
+        '''Count of subfolders in folder'''
         if self._subdirs is None:
             count = 0
             for el in self._elements:
                 if isinstance(el, Directory): count += 1
-            self._subdir = count
-        return self._subdir
+            self._subdirs = count
+        return self._subdirs
+
+    def get_all_files(self):
+        '''Count of all files in folder - what show Windows as ...'''
+        if self._all_files is None:
+            count = 0
+            for el in self._elements:
+                for ell in el.get_all_elements():
+                    if isinstance(ell, File): count += 1
+            self._all_files = count
+        return self._all_files
 
     def get_files(self):
+        '''Count of files in folder'''
         if self._files is None:
             count = 0
             for el in self._elements:
@@ -238,11 +324,13 @@ def main():
     end = time.perf_counter()
     print("Elapsed time compute_stats: " + str(datetime.timedelta(seconds=end-start)))
 
-    print("Files:", parent_directory.get_count())
-    print("Size:", parent_directory.get_size())
+    print("Files:", parent_directory.get_all_files())
+    print("Size:", parent_directory.get_size(), "(" + str(approximate_size(parent_directory.get_size())) + ")")
 
+    temp = [[e.get_name(), str(e.get_all_files()), str(e.get_size()), approximate_size(e.get_size()), datetime.datetime.fromtimestamp(e.get_modification_time()).strftime('%Y-%m-%d %H:%M:%S'), str(e.get_all_subdirs()), str(e.get_files()), str(e.get_subdirs())] for e in parent_directory.get_all_elements()]
+    #[e.print_all_elements() for e in parent_directory.get_all_elements()]
 
-    temp = [[e.get_name(), str(e.get_count()), str(e.get_size()), approximate_size(e.get_size()), str(e.get_all_subdirs()), str(e.get_files()), str(e.get_subdirs())] for e in parent_directory.get_all_directories_by_name()]
+    #temp = [[e.get_name(), str(e.get_all_files()), str(e.get_size()), approximate_size(e.get_size()), str(e.get_all_subdirs()), str(e.get_files()), str(e.get_subdirs())] for e in parent_directory.get_all_directories_by_name()]
 
     end = time.perf_counter()
     print("Elapsed time get_all_directories_by_name: " + str(datetime.timedelta(seconds=end-start)))
@@ -252,7 +340,7 @@ def main():
     #temp_p.sort(key=itemgetter(2), reverse = True)
     with open (filename, mode = "w", encoding = "utf-8") as f:
         a = ""
-        columns = ["Directory", "Total files", "Total size", "Approximate size", "Total subdirs", "Files in folder", "Dirs in folder"]
+        columns = ["Name", "Total files", "Total size", "Approximate size", "Modification time", "Total subdirs", "Files in folder", "Dirs in folder"]
         a += "\t".join([c for c in columns]) + "\n"
         for element in temp:
             #print (e[0],path_dict[e[0]][0],approximate_size(path_dict[e[0]][1],False),path_dict[e[0]][2])
